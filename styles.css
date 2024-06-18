@@ -1,0 +1,382 @@
+body {
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px;
+
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    gap: 15px;
+    padding-right: 70px;
+    
+}
+
+.navbar-center {
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #000000;
+}
+
+.logo {
+    --glow-color: rgb(122, 122, 173);
+    --glow-spread-color: rgba(59, 94, 124, 0.543);
+    --enhanced-glow-color: rgb(230, 199, 255);
+    --btn-color: rgb(40, 44, 160);
+    letter-spacing: 1px;
+    font-size: 2.4rem;
+    color: aliceblue;
+    text-shadow: 0 0 .5em var(--glow-color);
+}
+
+
+/* HERO SECTION  */
+
+/* Profile Section Styling */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+    padding: 5rem;
+    
+    background-color: #000000;
+    width: 62%; /* Adjusted width for better centering */
+    margin: 0 auto;
+    margin-bottom: -50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Hide initially */
+    animation: fadeIn 1s ease-in-out forwards; /* Fade-in animation */
+  }
+  
+  /* Animations */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px); /* Start slightly above */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Profile Image Styles */
+  
+  .hero-section img {
+    width: auto;
+    margin-top: -80px;
+    height: 150px;
+    border: 5px solid #1c69dd;
+    border-radius: 50%; /* Make sure the image is perfectly round */
+    padding: 5px;
+  }
+  
+  .hero-section img:hover {
+    border-color: #a72b0c; /* Adjusted for hover effect */
+  }
+  
+  /* Name Text */
+  
+  .hero-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: rgb(255, 255, 255);
+  }
+  
+  /* Icons for github and linkedin */
+  
+  .resume-icons i {
+    color: #1239c4;
+    padding: 15px;
+    padding-left: 10px;
+    font-size: 2.5rem;
+    
+  }
+  
+  .hero-section h3 {
+    font-size: 1.5rem;
+    color: #83858a;
+  }
+  
+  .hero-section span {
+    font-size: 1.5rem;
+    color: #505050;
+  }
+
+  button {
+    --glow-color: rgb(0, 99, 205);
+    --glow-spread-color: rgba(18, 58, 58, 0.543);
+    --enhanced-glow-color: rgb(80, 0, 146);
+    --btn-color: rgb(40, 44, 160);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Poppins;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    color: white;
+    transition: all 0.3s;
+    margin-left: 19px;
+    margin-top: 10px;
+   }
+   
+   button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+           color: white;
+   }
+   
+   button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+
+   .container {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* about section */
+
+
+.skillcard {
+    width: 190px;
+    margin-top: 100px;
+    height: 100px;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(22, 23, 64),
+                -15px -15px 30px rgb(12, 1, 110);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+   }
+
+
+
+   
+
+
+
+
+
+/* Projects section */
+.projects-section {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid with minimum item width of 300px */
+    gap: 20px; /* Gap between grid items */
+    max-width: 1200px; /* Optional: Limit maximum width of the grid */
+    width: 100%; /* Ensure grid takes full width of parent */
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+        gap: 10px; /* Reduce gap between items for smaller screens */
+        width: 300px;
+
+        
+    }
+}
+
+.card {
+    position: relative;
+    background-color: #212121;
+    border: 5px solid #222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+                rgba(0, 0, 0, 0.23) 0px 6px 6px,
+                inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+                inset rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transition: all ease-in-out 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: rgba(0, 85, 255, 0.19) 0px 10px 20px,
+                rgba(255, 255, 255, 0.23) 0px 6px 6px,
+                inset rgba(0, 0, 0, 0.19) 0px 10px 20px,
+                inset rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border: 5px solid #0044ff;
+}
+
+.card-title,
+.card-des,
+.card-text {
+    margin: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: default;
+}
+
+.card-des {
+    font-size: 15px;
+    font-weight: 600;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    word-break: break-all;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    cursor: default;
+}
+
+.card-text {
+    position: absolute;
+    font-size: 14px;
+    font-weight: 400;
+    right: 20px;
+    bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    animation: textanimate 0.8s alternate infinite;
+    cursor: pointer;
+}
+
+.card:hover > .card-text {
+    opacity: 1;
+}
+
+@keyframes textanimate {
+    0% {
+        right: 20px;
+    }
+
+    100% {
+        right: 10px;
+    }
+}
+
+.arrow-icon {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+/* Contact section */
+.contact-section {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5rem;
+    text-align: center;
+}
+
+
+
+
+/* Footer section */
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+  
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .navbar-left, .navbar-right {
+        justify-content: center;
+    }
+
+    .navbar-center {
+        margin: 10px 0;
+    }
+
+    button{
+        margin-left: -1px;
+    }
+}
+
+
+
