@@ -1,8 +1,10 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  
     margin: 0;
     padding: 0;
     background-color: #000000;
+    
 }
 
 .navbar {
@@ -92,9 +94,12 @@ body {
     border: 5px solid #1c69dd;
     border-radius: 50%; /* Make sure the image is perfectly round */
     padding: 5px;
+    
+    
   }
   
   .hero-section img:hover {
+    
     border-color: #a72b0c; /* Adjusted for hover effect */
   }
   
@@ -110,15 +115,21 @@ body {
   
   .resume-icons i {
     color: #1239c4;
-    padding: 15px;
-    padding-left: 10px;
+    padding: 10px;
+    
     font-size: 2.5rem;
+    padding-top: 10px;
+
+    animation: fadeIn 1s ease-in-out forwards;
+
+    
     
   }
   
   .hero-section h3 {
     font-size: 1.5rem;
     color: #83858a;
+    
   }
   
   .hero-section span {
@@ -127,10 +138,10 @@ body {
   }
 
   button {
-    --glow-color: rgb(0, 99, 205);
+    --glow-color: rgb(76, 98, 123);
     --glow-spread-color: rgba(18, 58, 58, 0.543);
-    --enhanced-glow-color: rgb(80, 0, 146);
-    --btn-color: rgb(40, 44, 160);
+    --enhanced-glow-color: rgb(200, 185, 212);
+    --btn-color: rgb(0, 8, 255);
     border: .25em solid var(--glow-color);
     padding: 1em 3em;
     color: var(--glow-color);
@@ -149,6 +160,7 @@ body {
     transition: all 0.3s;
     margin-left: 19px;
     margin-top: 10px;
+    
    }
    
    button::after {
@@ -172,7 +184,7 @@ body {
     box-shadow: 0 0 1em .25em var(--glow-color),
            0 0 4em 2em var(--glow-spread-color),
            inset 0 0 .75em .25em var(--glow-color);
-           color: white;
+           color: rgb(255, 255, 255);
    }
    
    button:active {
@@ -204,7 +216,57 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+
+                
    }
+
+
+.fa-c:hover{
+    color: #0c90a7;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fa-python:hover{
+    color: #9aa70c;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.fa-java:hover{
+    color: #d95d0a;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fa-html5:hover{
+    color: #9a2005;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fa-css3:hover{
+    color: #0e6aff;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.fa-js:hover{
+    color: #ffff00;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.bxl-php:hover{
+    color: #00ffe5;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.bxl-visual-studio:hover{
+    color: #1e00ff;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.bxl-git:hover{
+    color: #ff0000;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
 
 
 
@@ -223,6 +285,8 @@ body {
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
+
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .card-grid {
@@ -260,6 +324,7 @@ body {
                 inset rgba(0, 0, 0, 0.23) 0px 6px 6px;
     transition: all ease-in-out 0.3s;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .card:hover {
@@ -277,6 +342,7 @@ body {
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
             "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     color: #fff;
+    
 }
 
 .card-title {
@@ -305,6 +371,7 @@ body {
     bottom: 5px;
     display: flex;
     align-items: center;
+    text-decoration: none;
     gap: 3px;
     opacity: 0;
     transition: all ease-in-out 0.3s;
@@ -339,6 +406,12 @@ body {
     color: #ffffff;
     padding: 5rem;
     text-align: center;
+}
+
+
+button a{
+    color: white;
+    text-decoration: none;
 }
 
 
